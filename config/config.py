@@ -53,10 +53,16 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
+EXTRA_PLUGINS_REPO = getenv(
+    "EXTRA_PLUGINS_REPO",
+    "https://github.com/antoo69/modulmusik",
+)
+# Fill here the external plugins repo where plugins that you want to load
+
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Fsyrl99/ferdimusik",
+    "https://github.com/antoo69/repomusik",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -168,16 +174,16 @@ autoclean = []
 
 
 # Images
-START_IMG_URL = getenv("START_IMG_URL", None)
+START_IMG_URL = getenv("https://telegra.ph//file/e392b2b6e2dd714e9dba1.jpg", None)
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "assets/Ping.jpeg",
+    "https://telegra.ph//file/ac560c769805be7f617e7.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "assets/Playlist.jpeg",
+    "https://telegra.ph//file/893b9377825cd89f0e8ba.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
